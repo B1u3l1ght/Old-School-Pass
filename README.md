@@ -10,13 +10,13 @@ Here we'll try to explain the importance of a strong backbone pattern of a passw
 
 For our close to perfection password we are gonna use good old 94 characters (knowing some websites not allow spaces) and we'll split them inot 4 fileds:
 1) Symbols and special characters  ! " # $ % & ' ( ) * + , - ] . / : ; < } = | { > ? @ \ ^ ` ~ _ [         
-2) (32 symbols)
-3) Low cap leters a-z 
-4)  26 chars
-5) Captial letters A-Z 
-6) 26 chars
-7) Numbers 0-9, 
-8) 10 numbers
+  32 symbols
+2) Low cap leters a-z 
+  26 chars
+3) Captial letters A-Z 
+  26 chars
+4) Numbers 0-9, 
+  10 numbers
 
 On short we can represent our 94 search space depth like this 32|26|26|10 (horizontaly) or vertically 
 
@@ -31,10 +31,10 @@ So we will sacrifice the bigger haystack in exchange of the better entropy. Even
 To obtain the best chassis for out pattern we need to know desired pass length in our case 63 and so we have to remove from total 94 chars 31 chars. Having our 4 fields talked previously 32|26|26|10 we have to subtract from each filed approximately the same amount of chars in order to not influence negatively arrangements that can form inside each filed
 Therefor for a 94 total chars from each field 32|26|26|10 we must subtract ~ 8 or 7 chars not more not less and we will have for a 63 pass a chasis like 
 
-32|26|26|10
-24|18|18| 3
--------------
- 8  8  8  7
+             32|26|26|10
+             24|18|18| 3
+            -------------
+              8  8  8  7
  
 So from the first filed we subtract 8 from second 8 from third 8 and from fort 7. This is just an example this pattern can suffer minor changes but respecting the above rule of thumb where we must subtract an even number from each filed.
 
