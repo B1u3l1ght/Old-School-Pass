@@ -9,10 +9,14 @@ Here we'll try to explain the importance of a strong backbone pattern of a passw
 3) In order to achive the no. 1 step were gonna need math.
 
 For our close to perfection password we are gonna use good old 94 characters (knowing some websites not allow spaces) and we'll split them inot 4 fileds:
-1) Symbols and special characters  ! " # $ % & ' ( ) * + , - ] . / : ; < } = | { > ? @ \ ^ ` ~ _ [         32 symbols
-2) Low cap leters a-z  26 chars
-3) Captial letters A-Z 26 chars
-4) Numbers 0-9, 10 numbers
+1) Symbols and special characters  ! " # $ % & ' ( ) * + , - ] . / : ; < } = | { > ? @ \ ^ ` ~ _ [         
+2) (32 symbols)
+3) Low cap leters a-z 
+4)  26 chars
+5) Captial letters A-Z 
+6) 26 chars
+7) Numbers 0-9, 
+8) 10 numbers
 
 On short we can represent our 94 search space depth like this 32|26|26|10 (horizontaly) or vertically 
 
